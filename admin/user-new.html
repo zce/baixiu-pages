@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>后台管理系统</title>
+  <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendors/nprogress/nprogress.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <script src="../assets/vendors/nprogress/nprogress.js"></script>
+</head>
+<body>
+  <script>NProgress.start()</script>
+
+  <div class="main">
+    <div class="container-fluid">
+      <div class="header">
+        <nav class="navbar navbar-custom">
+          <div class="navbar-header">
+            <a href="javascript:;" class="navbar-brand"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>个人中心</a></li>
+            <li><a href="login.html"><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="body">
+        <div class="page-title">
+          <h1>新增用户</h1>
+        </div>
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input id="username" class="form-control" name="username" type="text" placeholder="用户名">
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input id="password" class="form-control" name="password" type="text" placeholder="密码">
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input id="email" class="form-control" name="email" type="text" placeholder="邮箱">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">添加</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="aside">
+    <div class="profile">
+      <div class="avatar img-circle"><img src="../uploads/avatar.jpg"></div>
+      <h4>布头儿</h4>
+    </div>
+    <div class="nav">
+      <ul class="list-unstyled">
+        <li>
+          <a href="index.html"><i class="glyphicon glyphicon-dashboard"></i>仪表盘</a>
+        </li>
+        <li>
+          <a href="#posts-sub" class="collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-pushpin"></i>文章<i class="arrow glyphicon glyphicon-chevron-right"></i>
+          </a>
+          <ul id="posts-sub" class="list-unstyled collapse">
+            <li><a href="posts.html">所有文章</a></li>
+            <li><a href="post-new.html">写文章</a></li>
+            <li><a href="categories.html">分类目录</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="comments.html"><i class="glyphicon glyphicon-comment"></i>评论</a>
+        </li>
+        <li class="active">
+          <a href="#users-sub" data-toggle="collapse">
+            <i class="glyphicon glyphicon-user"></i>用户<i class="arrow glyphicon glyphicon-chevron-right"></i>
+          </a>
+          <ul id="users-sub" class="list-unstyled collapse in">
+            <li><a href="users.html">所有用户</a></li>
+            <li class="active"><a href="user-new.html">新增用户</a></li>
+            <li><a href="profile.html">我的个人资料</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#settings-sub" class="collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-cog"></i>设置<i class="arrow glyphicon glyphicon-chevron-right"></i>
+          </a>
+          <ul id="settings-sub" class="list-unstyled collapse">
+            <li><a href="settings.html">导航设置</a></li>
+            <li><a href="slides.html">轮播设置</a></li>
+            <li><a href="settings.html">网站设置</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../assets/vendors/jquery/jquery.min.js"></script>
+  <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script>NProgress.done()</script>
+</body>
+</html>

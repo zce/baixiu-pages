@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>后台管理系统</title>
+  <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendors/nprogress/nprogress.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <script src="../assets/vendors/nprogress/nprogress.js"></script>
+</head>
+<body>
+  <script>NProgress.start()</script>
+
+  <div class="main">
+    <div class="container-fluid">
+      <div class="header">
+        <nav class="navbar navbar-custom">
+          <div class="navbar-header">
+            <a href="javascript:;" class="navbar-brand"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>个人中心</a></li>
+            <li><a href="login.html"><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="body">
+        <div class="page-title">
+          <h1>所有用户</h1>
+        </div>
+        <form class="form-inline" action="">
+          <select name="" class="form-control input-sm">
+            <option value="">批量操作</option>
+            <option value="">删除</option>
+          </select>
+          <button class="btn btn-default btn-sm">应用</button>
+          <ul class="pagination pagination-sm pull-right">
+            <li><a href="#">上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">下一页</a></li>
+          </ul>
+        </form>
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th class="text-center" width="40"><input type="checkbox"></th>
+              <th class="text-center" width="80">头像</th>
+              <th>用户名</th>
+              <th>昵称</th>
+              <th>邮箱</th>
+              <th class="text-center" width="120">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center"><input type="checkbox"></td>
+              <td class="text-center"><img src="../assets/img/monkey.png" alt=""></td>
+              <td>zce</td>
+              <td>汪磊</td>
+              <td>i@zce.me</td>
+              <td class="text-center">
+                <a href="post-new.html" class="btn btn-default btn-xs">编辑</a>
+                <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox"></td>
+              <td class="text-center"><img src="../assets/img/monkey.png" alt=""></td>
+              <td>zce</td>
+              <td>汪磊</td>
+              <td>i@zce.me</td>
+              <td class="text-center">
+                <a href="post-new.html" class="btn btn-default btn-xs">编辑</a>
+                <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox"></td>
+              <td class="text-center"><img src="../assets/img/monkey.png" alt=""></td>
+              <td>zce</td>
+              <td>汪磊</td>
+              <td>i@zce.me</td>
+              <td class="text-center">
+                <a href="post-new.html" class="btn btn-default btn-xs">编辑</a>
+                <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <form class="form-inline" action="">
+          <select name="" class="form-control input-sm">
+            <option value="">批量操作</option>
+            <option value="">删除</option>
+          </select>
+          <button class="btn btn-default btn-sm">应用</button>
+          <ul class="pagination pagination-sm pull-right">
+            <li><a href="#">上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">下一页</a></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="aside">
+    <div class="profile">
+      <div class="avatar img-circle"><img src="../uploads/avatar.jpg"></div>
+      <h4>布头儿</h4>
+    </div>
+    <div class="nav">
+      <ul class="list-unstyled">
+        <li>
+          <a href="index.html"><i class="glyphicon glyphicon-dashboard"></i>仪表盘</a>
+        </li>
+        <li>
+          <a href="#posts-sub" class="collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-pushpin"></i>文章<i class="arrow glyphicon glyphicon-chevron-right"></i>
+          </a>
+          <ul id="posts-sub" class="list-unstyled collapse">
+            <li><a href="posts.html">所有文章</a></li>
+            <li><a href="post-new.html">写文章</a></li>
+            <li><a href="categories.html">分类目录</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="comments.html"><i class="glyphicon glyphicon-comment"></i>评论</a>
+        </li>
+        <li class="active">
+          <a href="#users-sub" data-toggle="collapse">
+            <i class="glyphicon glyphicon-user"></i>用户<i class="arrow glyphicon glyphicon-chevron-right"></i>
+          </a>
+          <ul id="users-sub" class="list-unstyled collapse in">
+            <li class="active"><a href="users.html">所有用户</a></li>
+            <li><a href="user-new.html">新增用户</a></li>
+            <li><a href="profile.html">我的个人资料</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#settings-sub" class="collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-cog"></i>设置<i class="arrow glyphicon glyphicon-chevron-right"></i>
+          </a>
+          <ul id="settings-sub" class="list-unstyled collapse">
+            <li><a href="settings.html">导航设置</a></li>
+            <li><a href="slides.html">轮播设置</a></li>
+            <li><a href="settings.html">网站设置</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../assets/vendors/jquery/jquery.min.js"></script>
+  <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script>NProgress.done()</script>
+</body>
+</html>
