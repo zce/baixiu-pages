@@ -26,25 +26,23 @@
       </div>
       <div class="body">
         <div class="page-title">
-          <h1>图片轮播</h1>
+          <h1>导航菜单</h1>
         </div>
         <div class="row">
           <div class="col-md-4">
             <form action="" method="post">
-              <h2>添加新轮播内容</h2>
+              <h2>添加新导航链接</h2>
               <div class="form-group">
-                <label for="image">图片</label>
-                <!-- show when image chose -->
-                <img class="help-block" src="../assets/img/course.png" style="display: none">
-                <input id="image" class="form-control" name="image" type="file">
+                <label for="text">链接文本</label>
+                <input id="text" class="form-control" name="text" type="text" placeholder="链接文本">
               </div>
               <div class="form-group">
-                <label for="title">标题</label>
-                <input id="title" class="form-control" name="title" type="text" placeholder="标题">
+                <label for="title">链接抬头</label>
+                <input id="title" class="form-control" name="title" type="text" placeholder="链接抬头">
               </div>
               <div class="form-group">
-                <label for="link">链接</label>
-                <input id="link" class="form-control" name="link" type="text" placeholder="链接">
+                <label for="href">链接地址</label>
+                <input id="href" class="form-control" name="href" type="text" placeholder="链接地址">
               </div>
               <div class="form-group">
                 <button class="btn btn-primary" type="submit">添加</button>
@@ -63,17 +61,17 @@
               <thead>
                 <tr>
                   <th class="text-center" width="40"><input type="checkbox"></th>
-                  <th class="text-center">图片</th>
-                  <th>标题</th>
-                  <th>链接</th>
+                  <th>Text</th>
+                  <th>Title</th>
+                  <th>Href</th>
                   <th class="text-center" width="100">操作</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="text-center"><input type="checkbox"></td>
-                  <td><img class="slide" src="../uploads/slide_1.jpg" alt=""></td>
-                  <td>XIU功能演示</td>
+                  <td><i class="glyphicon glyphicon-glass"></i>奇趣事</td>
+                  <td>奇趣事</td>
                   <td>#</td>
                   <td class="text-center">
                     <a href="javascript:;" class="btn btn-info btn-xs">编辑</a>
@@ -82,8 +80,18 @@
                 </tr>
                 <tr>
                   <td class="text-center"><input type="checkbox"></td>
-                  <td><img class="slide" src="../uploads/slide_2.jpg" alt=""></td>
-                  <td>XIU功能演示</td>
+                  <td><i class="glyphicon glyphicon-phone"></i>潮科技</td>
+                  <td>潮科技</td>
+                  <td>#</td>
+                  <td class="text-center">
+                    <a href="javascript:;" class="btn btn-info btn-xs">编辑</a>
+                    <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center"><input type="checkbox"></td>
+                  <td><i class="glyphicon glyphicon-fire"></i>会生活</td>
+                  <td>会生活</td>
                   <td>#</td>
                   <td class="text-center">
                     <a href="javascript:;" class="btn btn-info btn-xs">编辑</a>
@@ -135,8 +143,8 @@
             <i class="glyphicon glyphicon-cog"></i>设置<i class="arrow glyphicon glyphicon-chevron-right"></i>
           </a>
           <ul id="settings-sub" class="list-unstyled collapse in">
-            <li><a href="nav-menus.html">导航菜单</a></li>
-            <li class="active"><a href="slides.html">图片轮播</a></li>
+            <li class="active"><a href="nav-menus.html">导航菜单</a></li>
+            <li><a href="slides.html">图片轮播</a></li>
             <li><a href="settings.html">网站设置</a></li>
           </ul>
         </li>

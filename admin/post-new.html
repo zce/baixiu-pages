@@ -64,6 +64,14 @@
               <input id="created" class="form-control" name="created" type="datetime-local">
             </div>
             <div class="form-group">
+              <label for="status">状态</label>
+              <select id="status" class="form-control" name="status">
+                <option value="draft">草稿</option>
+                <option value="publish">已发布</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default" type="submit">保存草稿</button>
               <button class="btn btn-primary" type="submit">发布</button>
             </div>
           </div>
@@ -96,22 +104,15 @@
           <a href="comments.html"><i class="glyphicon glyphicon-comment"></i>评论</a>
         </li>
         <li>
-          <a href="#users-sub" class="collapsed" data-toggle="collapse">
-            <i class="glyphicon glyphicon-user"></i>用户<i class="arrow glyphicon glyphicon-chevron-right"></i>
-          </a>
-          <ul id="users-sub" class="list-unstyled collapse">
-            <li><a href="users.html">所有用户</a></li>
-            <li><a href="user-new.html">新增用户</a></li>
-            <li><a href="profile.html">我的个人资料</a></li>
-          </ul>
+          <a href="users.html"><i class="glyphicon glyphicon-user"></i>用户</a>
         </li>
         <li>
           <a href="#settings-sub" class="collapsed" data-toggle="collapse">
             <i class="glyphicon glyphicon-cog"></i>设置<i class="arrow glyphicon glyphicon-chevron-right"></i>
           </a>
           <ul id="settings-sub" class="list-unstyled collapse">
-            <li><a href="settings.html">导航设置</a></li>
-            <li><a href="slides.html">轮播设置</a></li>
+            <li><a href="nav-menus.html">导航菜单</a></li>
+            <li><a href="slides.html">图片轮播</a></li>
             <li><a href="settings.html">网站设置</a></li>
           </ul>
         </li>

@@ -50,18 +50,18 @@
               <th>评论</th>
               <th>评论在</th>
               <th>提交于</th>
-              <th class="text-center" width="120">操作</th>
+              <th class="text-center" width="100">操作</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="danger">
               <td class="text-center"><input type="checkbox"></td>
               <td>大大</td>
               <td>楼主好人，顶一个</td>
               <td>《Hello world》</td>
               <td>2016/10/07</td>
               <td class="text-center">
-                <a href="post-new.html" class="btn btn-default btn-xs">编辑</a>
+                <a href="post-new.html" class="btn btn-info btn-xs">批准</a>
                 <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
               </td>
             </tr>
@@ -72,7 +72,7 @@
               <td>《Hello world》</td>
               <td>2016/10/07</td>
               <td class="text-center">
-                <a href="post-new.html" class="btn btn-default btn-xs">编辑</a>
+                <a href="post-new.html" class="btn btn-warning btn-xs">驳回</a>
                 <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
               </td>
             </tr>
@@ -83,7 +83,7 @@
               <td>《Hello world》</td>
               <td>2016/10/07</td>
               <td class="text-center">
-                <a href="post-new.html" class="btn btn-default btn-xs">编辑</a>
+                <a href="post-new.html" class="btn btn-warning btn-xs">驳回</a>
                 <a href="javascript:;" class="btn btn-danger btn-xs">删除</a>
               </td>
             </tr>
@@ -131,22 +131,15 @@
           <a href="comments.html"><i class="glyphicon glyphicon-comment"></i>评论</a>
         </li>
         <li>
-          <a href="#users-sub" class="collapsed" data-toggle="collapse">
-            <i class="glyphicon glyphicon-user"></i>用户<i class="arrow glyphicon glyphicon-chevron-right"></i>
-          </a>
-          <ul id="users-sub" class="list-unstyled collapse">
-            <li><a href="users.html">所有用户</a></li>
-            <li><a href="user-new.html">新增用户</a></li>
-            <li><a href="profile.html">我的个人资料</a></li>
-          </ul>
+          <a href="users.html"><i class="glyphicon glyphicon-user"></i>用户</a>
         </li>
         <li>
           <a href="#settings-sub" class="collapsed" data-toggle="collapse">
             <i class="glyphicon glyphicon-cog"></i>设置<i class="arrow glyphicon glyphicon-chevron-right"></i>
           </a>
           <ul id="settings-sub" class="list-unstyled collapse">
-            <li><a href="settings.html">导航设置</a></li>
-            <li><a href="slides.html">轮播设置</a></li>
+            <li><a href="nav-menus.html">导航菜单</a></li>
+            <li><a href="slides.html">图片轮播</a></li>
             <li><a href="settings.html">网站设置</a></li>
           </ul>
         </li>

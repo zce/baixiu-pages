@@ -30,37 +30,47 @@
         </div>
         <form class="form-horizontal">
           <div class="form-group">
-            <label class="col-sm-3 control-label">头像</label>
-            <div class="col-sm-8">
-              <label class="avatar">
+            <label for="site_logo" class="col-sm-2 control-label">网站图标</label>
+            <div class="col-sm-6">
+              <label class="form-image">
                 <input id="avatar" type="file">
-                <img src="../assets/img/default.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
                 <i class="mask glyphicon glyphicon-open"></i>
               </label>
             </div>
           </div>
           <div class="form-group">
-            <label for="nickname" class="col-sm-3 control-label">昵称</label>
-            <div class="col-sm-7">
-              <input id="nickname" class="form-control" type="type" value="汪磊" placeholder="昵称">
+            <label for="site_name" class="col-sm-2 control-label">站点名称</label>
+            <div class="col-sm-6">
+              <input id="site_name" class="form-control" type="type" placeholder="站点名称">
             </div>
           </div>
           <div class="form-group">
-            <label for="email" class="col-sm-3 control-label">邮箱</label>
-            <div class="col-sm-7">
-              <input id="email" class="form-control" type="type" value="i@zce.me" placeholder="邮箱">
+            <label for="site_description" class="col-sm-2 control-label">站点描述</label>
+            <div class="col-sm-6">
+              <textarea id="site_description" class="form-control" placeholder="站点描述" cols="30" rows="6"></textarea>
             </div>
           </div>
           <div class="form-group">
-            <label for="bio" class="col-sm-3 control-label">Bio</label>
-            <div class="col-sm-7">
-              <textarea id="bio" class="form-control" placeholder="Bio" cols="30" rows="6"></textarea>
+            <label for="site_keywords" class="col-sm-2 control-label">站点关键词</label>
+            <div class="col-sm-6">
+              <input id="site_keywords" class="form-control" type="type" placeholder="站点关键词">
             </div>
           </div>
           <div class="form-group">
-            <div class="col-sm-offset-3 col-sm-7">
-              <button type="submit" class="btn btn-primary">更新</button>
-              <a class="btn btn-link" href="password-reset.html">修改密码</a>
+            <label class="col-sm-2 control-label">评论</label>
+            <div class="col-sm-6">
+              <div class="checkbox">
+                <label><input id="comment_enable" type="checkbox" checked>开启评论功能</label>
+              </div>
+              <div class="checkbox">
+                <label><input id="comment_enable" type="checkbox" checked>评论必须经人工批准</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6">
+              <button type="submit" class="btn btn-primary">保存设置</button>
             </div>
           </div>
         </form>
@@ -92,22 +102,15 @@
           <a href="comments.html"><i class="glyphicon glyphicon-comment"></i>评论</a>
         </li>
         <li>
-          <a href="#users-sub" data-toggle="collapse">
-            <i class="glyphicon glyphicon-user"></i>用户<i class="arrow glyphicon glyphicon-chevron-right"></i>
-          </a>
-          <ul id="users-sub" class="list-unstyled collapse">
-            <li><a href="users.html">所有用户</a></li>
-            <li><a href="user-new.html">新增用户</a></li>
-            <li class="active"><a href="profile.html">我的个人资料</a></li>
-          </ul>
+          <a href="users.html"><i class="glyphicon glyphicon-user"></i>用户</a>
         </li>
         <li class="active">
           <a href="#settings-sub" data-toggle="collapse">
             <i class="glyphicon glyphicon-cog"></i>设置<i class="arrow glyphicon glyphicon-chevron-right"></i>
           </a>
           <ul id="settings-sub" class="list-unstyled collapse in">
-            <li><a href="settings.html">导航设置</a></li>
-            <li><a href="slides.html">轮播设置</a></li>
+            <li><a href="nav-menus.html">导航菜单</a></li>
+            <li><a href="slides.html">图片轮播</a></li>
             <li class="active"><a href="settings.html">网站设置</a></li>
           </ul>
         </li>

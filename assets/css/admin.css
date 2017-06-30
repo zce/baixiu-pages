@@ -130,7 +130,7 @@ a:focus {
 
 .main .header .navbar-custom {
   padding-right: 15px;
-  background-color: #FFF;
+  background-color: #fff;
   border-bottom: 1px solid #EEE;
   border-radius: 0;
 }
@@ -153,7 +153,7 @@ a:focus {
   line-height: 1;
   padding: 4px 6px;
   margin: 12px 0 0 15px;
-  color: #FFF;
+  color: #fff;
   background-color: #5cb85c;
   border-radius: 2px;
 }
@@ -164,8 +164,8 @@ a:focus {
 }
 
 .main .header .navbar-nav i {
-  font-size: 16px;
-  margin-right: 2px
+  margin-right: 4px;
+  font-size: .8em;
 }
 
 .main .header .navbar-nav .badge {
@@ -214,9 +214,9 @@ a:focus {
 }
 
 .main .body form h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 17px;
 }
 
 .main .body table {
@@ -227,16 +227,22 @@ a:focus {
   vertical-align: middle;
 }
 
-.main .body td img {
+.main .body td .avatar {
   margin: 0 auto;
   width: 40px;
   border-radius: 50%;
 }
 
-/*.main .body label {
-  color: #666;
+.main .body td .slide {
+  margin: 0 auto;
+  width: auto;
+  max-height: 80px;
+}
+
+.main .body label {
+  color: #555;
   font-weight: normal;
-}*/
+}
 
 .main .body textarea {
   resize: vertical;
@@ -250,19 +256,24 @@ a:focus {
   margin-top: 5px;
 }
 
-.main .body .avatar {
-  position: relative;
+.main .body .form-horizontal {
+  margin-top: 50px;
 }
 
-.main .body .avatar input {
+.main .body .form-image {
+  position: relative;
+  background-color: #fff;
+}
+
+.main .body .form-image input {
   display: none;
 }
 
-.main .body .avatar img {
-  width: 150px;
+.main .body .form-image img {
+  max-width: 150px;
 }
 
-.main .body .avatar i {
+.main .body .form-image i {
   position: absolute;
   top: 0;
   right: 0;
@@ -270,13 +281,20 @@ a:focus {
   left: 0;
   background: #c0c0c0;
   text-align: center;
-  line-height: 150px;
   font-size: 2em;
   opacity: 0;
   transition: opacity .3s;
 }
 
-.main .body .avatar:hover i {
+.main .body .form-image i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -14px;
+  margin-left: -14px;
+}
+
+.main .body .form-image:hover i {
   opacity: .6;
 }
 
@@ -292,7 +310,7 @@ a:focus {
   height: 340px;
   padding-top: 85px;
   margin: 180px auto;
-  background-color: #FFF;
+  background-color: #fff;
   position: relative;
 }
 
@@ -311,7 +329,7 @@ a:focus {
   top: -60px;
   width: 140px;
   height: 140px;
-  border: 10px solid #FFF;
+  border: 10px solid #fff;
   margin-left: -70px;
   border-radius: 50%;
   box-shadow: 0 1px 5px #CCC;
@@ -322,7 +340,7 @@ a:focus {
 .login-wrap form {
   margin: 0 50px;
 }
-
+/*
 #chapterModal label {
   color: #666;
   font-weight: normal;
@@ -353,3 +371,4 @@ a:focus {
   padding: 15px 10px;
 }
 
+*/

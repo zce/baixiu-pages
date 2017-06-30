@@ -1,14 +1,16 @@
-
-a, input {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 body {
   color: #444;
   font-size: 14px;
   font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #EEE;
+  background-color: #eee;
   overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 ul, dl, dt, dd, h1, h2, h3, h4, h5, h6, p {
@@ -99,7 +101,7 @@ img {
   width: 100%;
   height: 120px;
   text-indent: -2000px;
-  background: #FF5E52 url(../img/logo.png);
+  background: #FF5E52;
 }
 
 .header .logo a {
@@ -109,7 +111,7 @@ img {
 
 .header .nav {
   font-size: 16px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
 }
 
 .header .nav a {
@@ -136,7 +138,7 @@ img {
 .header .search {
   margin-bottom: 15px;
   padding: 30px 15px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
 }
 
 .header .search form {
@@ -624,7 +626,7 @@ img {
   content: '';
   width: 110%;
   margin: 0 -20px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -670,7 +672,7 @@ img {
   font-size: 12px;
   padding: 0 20px 20px;
   margin: 0 -20px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
 }
 
 .content .article .meta span {
@@ -792,7 +794,7 @@ img {
 .aside .random li {
   height: 60px;
   padding: 10px 0;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
 }
 
 .aside .random p {
@@ -831,7 +833,7 @@ img {
 .aside .discuz li {
   height: 40px;
   padding: 10px 0;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #eee;
 }
 
 .aside .discuz li:hover {
@@ -980,7 +982,7 @@ img {
 
   .content .panel .title {
     margin-bottom: 5px;
-    border-bottom: 2px solid #EEE;
+    border-bottom: 2px solid #eee;
   }
 
   .content .panel h3 {
