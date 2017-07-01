@@ -1,3 +1,7 @@
+.nprogress-busy {
+  cursor: wait;
+}
+
 body {
   background-color: #f8f9fb;
   -webkit-font-smoothing: antialiased;
