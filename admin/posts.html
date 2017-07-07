@@ -36,11 +36,8 @@
           </div>
         </div>
         <form class="form-inline" action="">
-          <select name="" class="form-control input-sm">
-            <option value="">批量操作</option>
-            <option value="">删除</option>
-          </select>
-          <button class="btn btn-default btn-sm">应用</button>
+          <!-- show when multiple checked -->
+          <a class="btn btn-danger btn-sm" href="post-delete.php?items=" style="display: none">批量删除</a>
           <select name="" class="form-control input-sm">
             <option value="">所有分类</option>
             <option value="">未分类</option>
@@ -110,30 +107,6 @@
             </tr>
           </tbody>
         </table>
-        <form class="form-inline" action="">
-          <select name="" class="form-control input-sm">
-            <option value="">批量操作</option>
-            <option value="">删除</option>
-          </select>
-          <button class="btn btn-default btn-sm">应用</button>
-          <select name="" class="form-control input-sm">
-            <option value="">所有分类</option>
-            <option value="">未分类</option>
-          </select>
-          <select name="" class="form-control input-sm">
-            <option value="">所有状态</option>
-            <option value="">草稿</option>
-            <option value="">已发布</option>
-          </select>
-          <button class="btn btn-default btn-sm">筛选</button>
-          <ul class="pagination pagination-sm pull-right">
-            <li><a href="#">上一页</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">下一页</a></li>
-          </ul>
-        </form>
       </div>
     </div>
   </div>

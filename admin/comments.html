@@ -29,11 +29,8 @@
           <h1>所有评论</h1>
         </div>
         <form class="form-inline" action="">
-          <select name="" class="form-control input-sm">
-            <option value="">批量操作</option>
-            <option value="">删除</option>
-          </select>
-          <button class="btn btn-default btn-sm">应用</button>
+          <!-- show when multiple checked -->
+          <a class="btn btn-danger btn-sm" href="post-delete.php?items=" style="display: none">批量删除</a>
           <ul class="pagination pagination-sm pull-right">
             <li><a href="#">上一页</a></li>
             <li><a href="#">1</a></li>
@@ -93,20 +90,6 @@
             </tr>
           </tbody>
         </table>
-        <form class="form-inline" action="">
-          <select name="" class="form-control input-sm">
-            <option value="">批量操作</option>
-            <option value="">删除</option>
-          </select>
-          <button class="btn btn-default btn-sm">应用</button>
-          <ul class="pagination pagination-sm pull-right">
-            <li><a href="#">上一页</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">下一页</a></li>
-          </ul>
-        </form>
       </div>
     </div>
   </div>
