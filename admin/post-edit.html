@@ -23,41 +23,51 @@
     </nav>
     <div class="container-fluid">
       <div class="page-title">
-        <h1>我的个人资料</h1>
+        <h1>写文章</h1>
       </div>
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label class="col-sm-3 control-label">头像</label>
-          <div class="col-sm-6">
-            <label class="form-image">
-              <input id="avatar" type="file">
-              <img src="../assets/img/default.png" alt="">
-              <i class="mask fa fa-upload"></i>
-            </label>
+      <form class="row" method="post">
+        <div class="col-md-9">
+          <div class="form-group">
+            <label for="title">标题</label>
+            <input id="title" class="form-control input-lg" name="title" type="text" placeholder="文章标题">
+          </div>
+          <div class="form-group">
+            <label for="content">标题</label>
+            <textarea id="content" class="form-control input-lg" name="content" cols="30" rows="10" placeholder="内容"></textarea>
           </div>
         </div>
-        <div class="form-group">
-          <label for="nickname" class="col-sm-3 control-label">昵称</label>
-          <div class="col-sm-6">
-            <input id="nickname" class="form-control" type="type" value="汪磊" placeholder="昵称">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="slug">别名</label>
+            <input id="slug" class="form-control" name="slug" type="text" placeholder="slug">
+            <p class="help-block">https://zce.me/post/<strong>slug</strong>/</p>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="email" class="col-sm-3 control-label">邮箱</label>
-          <div class="col-sm-6">
-            <input id="email" class="form-control" type="type" value="i@zce.me" placeholder="邮箱">
+          <div class="form-group">
+            <label for="feature">特色图像</label>
+            <!-- show when image chose -->
+            <img class="help-block thumbnail" style="display: none">
+            <input id="feature" class="form-control" name="feature" type="file" placeholder="feature">
           </div>
-        </div>
-        <div class="form-group">
-          <label for="bio" class="col-sm-3 control-label">Bio</label>
-          <div class="col-sm-6">
-            <textarea id="bio" class="form-control" placeholder="Bio" cols="30" rows="6">MAKE IT BETTER!</textarea>
+          <div class="form-group">
+            <label for="category">所属分类</label>
+            <select id="category" class="form-control" name="category">
+              <option value="1">未分类</option>
+              <option value="2">潮生活</option>
+            </select>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-3 col-sm-6">
-            <button type="submit" class="btn btn-primary">更新</button>
-            <a class="btn btn-link" href="password-reset.html">修改密码</a>
+          <div class="form-group">
+            <label for="created">发布时间</label>
+            <input id="created" class="form-control" name="created" type="datetime-local">
+          </div>
+          <div class="form-group">
+            <label for="status">状态</label>
+            <select id="status" class="form-control" name="status">
+              <option value="draft">草稿</option>
+              <option value="publish">已发布</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">保存</button>
           </div>
         </div>
       </form>
@@ -73,13 +83,13 @@
       <li>
         <a href="index.html"><i class="fa fa-dashboard"></i>仪表盘</a>
       </li>
-      <li>
-        <a href="#menu-posts" class="collapsed" data-toggle="collapse">
+      <li class="active">
+        <a href="#menu-posts" data-toggle="collapse">
           <i class="fa fa-thumb-tack"></i>文章<i class="fa fa-angle-right"></i>
         </a>
-        <ul id="menu-posts" class="collapse">
+        <ul id="menu-posts" class="collapse in">
           <li><a href="posts.html">所有文章</a></li>
-          <li><a href="post-edit.html">写文章</a></li>
+          <li class="active"><a href="post-edit.html">写文章</a></li>
           <li><a href="categories.html">分类目录</a></li>
         </ul>
       </li>
@@ -105,6 +115,15 @@
   <script src="../assets/vendors/jquery/jquery.min.js"></script>
   <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="../assets/vendors/simplemde/simplemde.min.js"></script>
+  <script>
+    new SimpleMDE({
+      element: document.getElementById('content'),
+      // 拼写检查
+      spellChecker: false,
+      // 禁止下载在线 font-awesome
+      autoDownloadFontAwesome: false
+    })
+  </script>
   <script>NProgress.done()</script>
 </body>
 </html>
