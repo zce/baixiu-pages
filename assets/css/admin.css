@@ -1,5 +1,14 @@
-html.nprogress-busy {
+.nprogress-busy {
   cursor: wait;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: rgba(102, 175, 233, .8);
+  box-shadow: 0 0 0 2px rgba(102, 175, 233, .4);
 }
 
 body {
@@ -13,8 +22,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 180px;
   height: 100%;
+
   background-color: #2f4050;
 }
 
@@ -29,7 +40,9 @@ body {
 .aside .profile .avatar {
   width: 80px;
   height: 80px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+
+  border: 3px solid rgba(255, 255, 255, .3);
+
   object-fit: cover;
 }
 
@@ -48,9 +61,10 @@ body {
 }
 
 .aside .nav a {
-  display: inline-block;
-  width: 100%;
+  display: block;
+
   padding: 10px 20px;
+
   color: #a9b0c2;
 }
 
@@ -68,16 +82,19 @@ body {
 .aside .nav a i:first-child {
   width: 14px;
   margin-right: 10px;
+
   font-size: 14px;
   line-height: 16px;
 }
 
 .aside .nav .fa-angle-right {
   float: right;
-  font-size: 16px;
-  line-height: 20px;
+
   transition: transform .2s;
   transform: rotate(90deg);
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .aside .nav .collapsed .fa-angle-right {
@@ -87,11 +104,15 @@ body {
 }
 
 .aside .nav a + ul {
-  list-style: none;
-  padding: 0;
   overflow: hidden;
+
+  padding: 0;
+
+  list-style: none;
+
   background-color: #243443;
   box-shadow: inset 0 1px 3px #111e29;
+
   font-size: .9em;
 }
 
@@ -109,7 +130,9 @@ body {
 
 .main {
   position: relative;
+
   overflow: hidden;
+
   min-width: 844px;
   min-height: 100vh;
   padding: 70px 5px 20px 185px;
@@ -121,7 +144,9 @@ body {
   top: 0;
   right: 0;
   left: 180px;
+
   padding: 0 15px 0 10px;
+
   border: 0;
   border-bottom: 1px solid #eee;
   border-radius: 0;
@@ -130,6 +155,7 @@ body {
 
 .main .navbar .navbar-btn {
   padding: 10px 12px;
+
   color: #444;
   border: 0;
 }
@@ -152,22 +178,30 @@ body {
   margin: 0;
 
   font-size: 24px;
+  font-weight: 400;
 }
 
-.main .container-fluid .page-title .btn {
+.main .container-fluid .page-title .btn-primary {
+  margin-left: 5px;
+
   vertical-align: bottom;
 }
 
 .main .container-fluid .page-title .input-group {
-  max-width: 300px;
+  max-width: 230px;
 }
 
-.main .container-fluid .form-inline {
-  margin-bottom: 15px;
+.main .container-fluid .page-action {
   overflow: hidden;
+
+  margin-bottom: 10px;
 }
 
-.main .container-fluid .form-inline .btn {
+.main .container-fluid .page-action .form-inline {
+  display: inline-block;
+}
+
+.main .container-fluid .page-action .btn {
   margin-right: 15px;
 }
 
@@ -180,10 +214,17 @@ body {
   margin-bottom: 15px;
 
   font-size: 17px;
+  font-weight: 400;
 }
 
 .main .container-fluid table {
   background-color: #fff;
+}
+
+.main .container-fluid th {
+  border-bottom: 1px;
+
+  font-weight: 400;
 }
 
 .main .container-fluid td {
@@ -192,6 +233,7 @@ body {
 
 .main .container-fluid td .avatar {
   width: 40px;
+
   border-radius: 50%;
 }
 
