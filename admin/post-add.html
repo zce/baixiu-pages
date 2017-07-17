@@ -2,10 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>Dashboard &laquo; Admin</title>
+  <title>Add new post &laquo; Admin</title>
   <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/vendors/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="../assets/vendors/simplemde/simplemde.min.css">
   <link rel="stylesheet" href="../assets/vendors/nprogress/nprogress.css">
   <link rel="stylesheet" href="../assets/css/admin.css">
   <script src="../assets/vendors/nprogress/nprogress.js"></script>
@@ -50,7 +49,7 @@
             <label for="feature">特色图像</label>
             <!-- show when image chose -->
             <img class="help-block thumbnail" style="display: none">
-            <input id="feature" class="form-control" name="feature" type="file" placeholder="feature">
+            <input id="feature" class="form-control" name="feature" type="file">
           </div>
           <div class="form-group">
             <label for="category">所属分类</label>
@@ -66,8 +65,8 @@
           <div class="form-group">
             <label for="status">状态</label>
             <select id="status" class="form-control" name="status">
-              <option value="draft">草稿</option>
-              <option value="publish">已发布</option>
+              <option value="drafted">草稿</option>
+              <option value="published">已发布</option>
             </select>
           </div>
           <div class="form-group">
@@ -118,16 +117,6 @@
 
   <script src="../assets/vendors/jquery/jquery.js"></script>
   <script src="../assets/vendors/bootstrap/js/bootstrap.js"></script>
-  <script src="../assets/vendors/simplemde/simplemde.min.js"></script>
-  <script>
-    new SimpleMDE({
-      element: document.getElementById('content'),
-      // 拼写检查
-      spellChecker: false,
-      // 禁止下载在线 font-awesome
-      autoDownloadFontAwesome: false
-    })
-  </script>
   <script>NProgress.done()</script>
 </body>
 </html>
